@@ -10,7 +10,7 @@
     border-bottom:2px dashed @navigation-border;
 }
 
-.buttons (@bg-color:darkcyan, @txt-color: white) {
+.buttons (@bg-color: @eastern-blue, @txt-color: white) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,15 @@
     font-size: 1.8rem;
     border-radius: 10px;
     color: @txt-color;
+
+    &:hover {
+        background-color: palevioletred;
+        color: chartreuse;
+    }
 }
 
-
+.dest-layout {
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 15px;
+}

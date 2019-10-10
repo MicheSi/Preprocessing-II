@@ -6,6 +6,11 @@
 .borders {
   border-bottom: 2px dashed #C0C0C0;
 }
+.dest-layout {
+  width: 75%;
+  margin-left: 12%;
+  margin-bottom: 15px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -205,6 +210,8 @@ nav h1 {
   nav h1 {
     margin: 0 auto;
     text-align: center;
+    font-size: 3.2rem;
+    padding: 15px 0 20px;
   }
 }
 nav a {
@@ -213,6 +220,9 @@ nav a {
   margin-left: 10px;
   font-size: 1.6rem;
   margin-right: 45px;
+}
+nav a:hover {
+  color: #17A2B8;
 }
 @media (max-width: 500px) {
   nav a {
@@ -327,19 +337,41 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 15px;
+  }
 }
 .home .content-pick .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkcyan;
+  background-color: #17A2B8;
   margin: 0 10px 20px;
   width: 200px;
   height: 45px;
   font-size: 1.8rem;
   border-radius: 10px;
   color: white;
+}
+.home .content-pick .btn:hover {
+  background-color: palevioletred;
+  color: chartreuse;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 300px;
+    margin-left: 0;
+  }
 }
