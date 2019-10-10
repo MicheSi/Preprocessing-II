@@ -176,8 +176,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
 nav {
-  max-width: 1000px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
   padding: 3% 4% 1%;
@@ -189,6 +194,7 @@ nav {
   nav {
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: 400px ;
   }
 }
 nav h1 {
@@ -210,7 +216,8 @@ nav a {
 }
 @media (max-width: 500px) {
   nav a {
-    margin-right: 0 auto;
+    margin-right: 20px;
+    margin-left: 17px;
   }
 }
 .footer {
@@ -220,11 +227,21 @@ nav a {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
+@media (max-width: 500px) {
+  .footer {
+    max-width: 400px;
+  }
+}
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .header {
+    max-width: 400px;
+  }
 }
 .header img {
   margin-bottom: 3%;
@@ -239,13 +256,28 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -254,17 +286,37 @@ nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
