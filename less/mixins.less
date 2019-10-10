@@ -1,2 +1,16 @@
 // Mixins in here
 
+.borders {
+    border-bottom:2px dashed @navigation-border;
+}
+
+.buttons (@bg-color:darkcyan, @txt-color: white) {
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    width: 200px;
+    height: 45px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    color: @txt-color;
+}

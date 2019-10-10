@@ -1,3 +1,6 @@
+.borders {
+  border-bottom: 2px dashed #C0C0C0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -179,12 +182,14 @@ nav {
 }
 nav h1 {
   font-size: 4.2rem;
+  margin-left: 40px;
 }
 nav a {
   text-decoration: none;
   color: black;
-  margin-left: 20px;
-  font-size: 1.8rem;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  margin-right: 45px;
 }
 .footer {
   width: 100%;
@@ -196,6 +201,13 @@ nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.header img {
+  margin-bottom: 3%;
+}
+.header p {
+  padding-bottom: 3%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
