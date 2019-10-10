@@ -1,3 +1,8 @@
+.page-layout {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .borders {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -180,9 +185,21 @@ nav {
   justify-content: space-between;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 nav h1 {
   font-size: 4.2rem;
   margin-left: 40px;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 nav a {
   text-decoration: none;
@@ -191,7 +208,14 @@ nav a {
   font-size: 1.6rem;
   margin-right: 45px;
 }
+@media (max-width: 500px) {
+  nav a {
+    margin-right: 0 auto;
+  }
+}
 .footer {
+  max-width: 800px;
+  margin: 0 auto;
   width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
@@ -254,4 +278,16 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+  margin: 0 10px 20px;
+  width: 200px;
+  height: 45px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  color: white;
 }

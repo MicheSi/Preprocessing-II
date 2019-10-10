@@ -1,11 +1,19 @@
 // Mixins in here
 
+.page-layout {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .borders {
     border-bottom:2px dashed @navigation-border;
 }
 
 .buttons (@bg-color:darkcyan, @txt-color: white) {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: @bg-color;
     margin: 0 10px 20px;
     width: 200px;
@@ -14,3 +22,4 @@
     border-radius: 10px;
     color: @txt-color;
 }
+

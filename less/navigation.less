@@ -8,9 +8,20 @@ nav {
     justify-content: space-between;
     .borders();
 
+    @media @mobile {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
     h1 {
         font-size: 4.2rem;
         margin-left: 40px;
+
+        @media @mobile {
+            margin: 0 auto;
+            text-align: center;
+        }
+
     }
 
     a {
@@ -19,5 +30,11 @@ nav {
         margin-left: 10px;
         font-size: 1.6rem;
         margin-right: 45px;
+
+        @media @mobile {
+            margin-right: 0 auto;
+            
+        }
+
     }
 }
